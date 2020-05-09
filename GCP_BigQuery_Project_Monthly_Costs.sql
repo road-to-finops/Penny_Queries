@@ -24,3 +24,5 @@ GROUP BY
   2,
   3
 ORDER BY
+ 1 ASC,
+ 2 ASC
