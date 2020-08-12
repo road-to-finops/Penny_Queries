@@ -27,7 +27,7 @@ line_item_line_item_type
 FROM "database_value"."cur_table"
 WHERE month = '6'
 AND year = '2020'
-AND line_item_usage_account_id = '949913358111'
+AND line_item_usage_account_id = '<ACCOUNT_ID>'
 AND line_item_line_item_type = 'Usage'
 GROUP BY line_item_usage_account_id,line_item_product_code, line_item_line_item_type
 union
@@ -35,7 +35,7 @@ SELECT account_id,"estimated monthly savings",
 name,
 'TA'
 FROM "database_value"."trusted_advisor"
-WHERE account_id ='949913358111'
+WHERE account_id ='<ACCOUNT_ID>'
 AND month = '6'
 AND year = '2020'
 group by account_id, name, "estimated monthly savings
